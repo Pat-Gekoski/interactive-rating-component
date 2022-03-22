@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 53.13em) {
+    html {
+      font-size: 54%; } }
+
+body {
+  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif; }
+
+.u-center-text {
+  text-align: center; }
+
+.btn {
+  width: 100%;
+  margin-top: 3.2rem;
+  padding: 1.3rem;
+  border-radius: 2.2rem;
+  background-color: #fb7413;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px; }
+  .btn:hover {
+    background-color: white;
+    color: #fb7413; }
+
+.card {
+  background: radial-gradient(circle at top, #252d37, #121417);
+  padding: 3.2rem;
+  border-radius: 3rem;
+  width: 41rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 53.13em) {
+    .card {
+      width: 32.7rem;
+      padding: 2rem; } }
+  .card__title {
+    font-family: "Overpass", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 1.5rem; }
+  .card__text {
+    color: #959eac;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem; }
+    @media only screen and (max-width: 53.13em) {
+      .card__text {
+        font-size: 1.4rem; } }
+  .card__img {
+    align-self: center;
+    margin-bottom: 3.2rem; }
+
+.star-container {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: #252d37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem; }
+
+.rating-container {
+  display: flex;
+  justify-content: space-between; }
+
+.selected {
+  height: 3.2rem;
+  margin-bottom: 3.2rem;
+  align-self: center;
+  text-align: center;
+  padding: .6rem 2rem;
+  border-radius: 2.2rem;
+  background-color: #252d37;
+  color: #fb7413; }
+
+.rating {
+  display: flex;
+  justify-content: space-between; }
+  .rating-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #252d37;
+    color: #959eac;
+    border-radius: 50%;
+    padding-top: 5px; }
+    .rating-btn:hover {
+      background-color: #959eac;
+      color: white;
+      cursor: pointer; }
+
+.radio-input {
+  display: none; }
+
+.radio-input:checked + .rating__label .rating-btn {
+  background-color: #fb7413;
+  color: white; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121417;
+  background-color: #0a0a0a; }

@@ -1,0 +1,31 @@
+.rating {
+	display: flex;
+	justify-content: space-between;
+
+	&-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 4.8rem;
+		height: 4.8rem;
+		background-color: $color-dark-blue;
+		color: $color-light-grey;
+		border-radius: 50%;
+		padding-top: 5px;
+
+		&:hover {
+			background-color: $color-light-grey;
+			color: $color-white;
+			cursor: pointer;
+		}
+	}
+}
+
+.radio-input {
+	display: none;
+}
+
+.radio-input:checked + .rating__label .rating-btn {
+	background-color: $color-primary;
+	color: $color-white;
+}
